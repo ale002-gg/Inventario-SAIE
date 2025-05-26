@@ -646,9 +646,13 @@
     &copy; 2024 COBAEH
   </footer>
 
-  <script>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script>
     (() => {
-      const { jsPDF } = window.jspdf; || window.jspdf.jsPDF;
+      const jsPDF = window.jspdf.jsPDF;
 
       const users = {
         docente: { password: '1234', role: 'docente' },
@@ -1136,5 +1140,6 @@
 
       renderTable(inventario);
     })();</script>
+  </script>
 </body>
 </html>
